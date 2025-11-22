@@ -213,6 +213,23 @@ h1 {
     height: 100%;
 }
 
+/* ensure SVG icons follow text color via currentColor */
+.feature-icon {
+    color: #1a1a1a;
+}
+
+.feature-text {
+    font-size: 15px;
+    color: #1a1a1a;
+    line-height: 1.4;
+    font-weight: 500;
+}
+
+.dark .feature-icon,
+.dark .feature-text {
+    color: #e6eef0;
+}
+
 .feature-text {
     font-size: 15px;
     color: #1a1a1a;
@@ -424,4 +441,111 @@ h1 {
     .phone-frame {
         max-width: 260px;
     }
+}
+
+.top-controls {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 16px;
+}
+
+.theme-toggle {
+    background: transparent;
+    border: 1px solid rgba(0,0,0,0.08);
+    color: #1a1a1a;
+    padding: 8px 12px;
+    border-radius: 10px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.18s ease, color 0.18s ease, border-color 0.18s ease;
+}
+
+.theme-toggle:hover {
+    background: rgba(0,0,0,0.04);
+}
+
+.theme-toggle {
+    position: fixed;
+    right: 18px;
+    bottom: 18px;
+    z-index: 9999;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+    backdrop-filter: blur(6px);
+}
+
+/* Updates list */
+.updates {
+    margin-top: 28px;
+    padding: 18px 16px;
+    border-radius: 12px;
+}
+
+.updates h2 {
+    font-size: 18px;
+    margin-bottom: 12px;
+    color: #1a1a1a;
+}
+
+.updates-list {
+    list-style: none;
+    display: block;
+}
+
+.updates-list li {
+    padding: 10px 12px;
+    border-radius: 16px;
+    margin-bottom: 8px;
+    background: rgba(0,0,0,0.03);
+    color: #222;
+    font-size: 14px;
+}
+
+.updates-empty {
+    color: #666;
+}
+
+.dark body,
+.dark #loader {
+    background: linear-gradient(180deg, #0b0d10 0%, #0f1113 50%, #081014 100%);
+}
+
+.dark h1,
+.dark .feature-text,
+.dark .subtitle,
+.dark .stat-number,
+.dark .stat-label,
+.dark .loader-text {
+    color: #e6eef0;
+}
+
+.dark .feature {
+    background: rgba(255,255,255,0.03);
+}
+
+.dark .feature:nth-child(1) { background: rgba(255,255,255,0.02); }
+.dark .feature:nth-child(2) { background: rgba(255,255,255,0.02); }
+.dark .feature:nth-child(3) { background: rgba(255,255,255,0.02); }
+.dark .feature:nth-child(4) { background: rgba(255,255,255,0.02); }
+
+.dark .download-btn {
+    background: #2ecc84;
+    color: #03110a;
+}
+
+.dark .updates {
+    background: rgba(255,255,255,0.03);
+}
+
+.dark .updates-list li {
+    background: rgba(255,255,255,0.02);
+    color: #d7e7e9;
+}
+
+.dark .theme-toggle {
+    border-color: rgba(255,255,255,0.06);
+    color: #d7e7e9;
+}
+
+body, .feature, .download-btn, .updates, .updates-list li, .theme-toggle, #loader {
+    transition: background 0.18s ease, color 0.18s ease, border-color 0.18s ease;
 }
