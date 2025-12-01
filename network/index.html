@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INT - Новая социальная сеть | Бета-тестирование</title>
+    <meta name="description" content="INT - профессиональная социальная сеть для современного общения.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Google+Sans:wght@300;400;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="container nav-content">
+            <a href="#" class="red-block-logo">
+                <span class="logo-int-block">
+                    <font dir="auto" style="vertical-align: inherit;">
+                        <font dir="auto" style="vertical-align: inherit;">ИНТ</font>
+                    </font>
+                </span>
+                <span class="logo-network-text">
+                    <font dir="auto" style="vertical-align: inherit;">
+                        <font dir="auto" style="vertical-align: inherit;">Потрясающая сеть</font>
+                    </font>
+                </span>
+            </a>
+            <div class="nav-links">
+                <a href="#features" class="nav-link">
+                    <font dir="auto" style="vertical-align: inherit;">
+                        <font dir="auto" style="vertical-align: inherit;">Функции</font>
+                    </font>
+                </a>
+                <a href="#stats" class="nav-link">
+                    <font dir="auto" style="vertical-align: inherit;">
+                        <font dir="auto" style="vertical-align: inherit;">Статистика</font>
+                    </font>
+                </a>
+                <a href="#download" class="nav-link">
+                    <font dir="auto" style="vertical-align: inherit;">
+                        <font dir="auto" style="vertical-align: inherit;">Скачать</font>
+                    </font>
+                </a>
+                <a href="#download" class="btn-download">
+                    <font dir="auto" style="vertical-align: inherit;">
+                        <font dir="auto" style="vertical-align: inherit;">
+                            Скачать
+                        </font>
+                    </font><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                        <polyline points="7 10 12 15 17 10"></polyline>
+                        <line x1="12" x2="12" y1="15" y2="3"></line>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="hero">
+            <div class="bg-blobs">
+                <div class="bg-blob blob-blue"></div>
+                <div class="bg-blob blob-yellow"></div>
+                <div class="bg-blob blob-red"></div>
+            </div>
+
+            <div class="hero-wrapper container">
+                <div class="hero-content">
+                    <p class="hero-logo">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            style="color: var(--logo-green);">
+                            <path d="M12 2a10 10 0 0 0 0 20 10 10 0 0 0 0-20z" />
+                            <path d="M12 18v-6l4 4-4-4v-4" />
+                        </svg>
+                        Сеть следующего поколения
+                    </p>
+                    <h1 class="hero-title">
+                        Открывайте, подключайтесь и творите с <span class="text-gradient">Потрясающая сеть</span>.
+                    </h1>
+                    <div class="hero-buttons">
+                        <a href="#download" class="btn btn-primary">
+                            <span class="btn-content">
+                                Начать исследование
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <polyline points="9 18 15 12 9 6" />
+                                </svg>
+                            </span>
+                        </a>
+                        <a href="#features" class="btn btn-secondary">Узнать больше</a>
+                    </div>
+                </div>
+
+                <div class="phone-mockup">
+                    <div class="phone-screen">
+                        <img src="imagephone.png" alt="Превью приложения на телефоне">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="user-carousel-section">
+            <div class="user-carousel-wrapper">
+                <div class="user-carousel" id="userCarousel">
+                    <div class="user-card-template" style="display: none;">
+                        <svg class="user-views-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" width="12"
+                            height="12" fill="white">
+                            <path
+                                d="M316.7 197.8C351.4 179.3 384 144.3 384 96C384 43 336 0 288 0S192 43 192 96c0 48.3 32.7 83.3 67.3 101.8-85.3 17.5-147.2 60.5-182.6 123.1C22 360.8 0 443.9 0 482.3C0 498.7 13.3 512 29.7 512H546.3c16.4 0 29.7-13.3 29.7-29.7 0-38.4-22-121.5-87.8-161.4-35.4-62.6-97.3-105.6-182.6-123.1zm-84.3 148.9c32.6-35.3 75.3-51.4 120.9-46.9 19.5 2 38.6 7.4 56.4 15.6 2.5 1.2 5.1 2.5 7.6 3.9 14 7.6 26.6 16.9 36.9 28.5 22.2 24.3 33 55.4 33 87.1v27.9c0 10.9-8.9 19.8-19.8 19.8H187.8c-10.9 0-19.8-8.9-19.8-19.8V416.7c0-31.7 10.8-62.8 33-87.1 10.3-11.6 22.9-20.9 36.9-28.5 2.5-1.4 5.1-2.7 7.6-3.9zM288 152c-30.9 0-56-25.1-56-56s25.1-56 56-56 56 25.1 56 56-25.1 56-56 56z" />
+                        </svg>
+                    </div>
+
+                    <div class="user-card">
+                        <img src="https://picsum.photos/300/300?1" alt="Анастасия Иванова">
+                        <div class="user-views">
+                            <svg class="user-views-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"
+                                width="12" height="12" fill="white">
+                                <path
+                                    d="M316.7 197.8C351.4 179.3 384 144.3 384 96C384 43 336 0 288 0S192 43 192 96c0 48.3 32.7 83.3 67.3 101.8-85.3 17.5-147.2 60.5-182.6 123.1C22 360.8 0 443.9 0 482.3C0 498.7 13.3 512 29.7 512H546.3c16.4 0 29.7-13.3 29.7-29.7 0-38.4-22-121.5-87.8-161.4-35.4-62.6-97.3-105.6-182.6-123.1zm-84.3 148.9c32.6-35.3 75.3-51.4 120.9-46.9 19.5 2 38.6 7.4 56.4 15.6 2.5 1.2 5.1 2.5 7.6 3.9 14 7.6 26.6 16.9 36.9 28.5 22.2 24.3 33 55.4 33 87.1v27.9c0 10.9-8.9 19.8-19.8 19.8H187.8c-10.9 0-19.8-8.9-19.8-19.8V416.7c0-31.7 10.8-62.8 33-87.1 10.3-11.6 22.9-20.9 36.9-28.5 2.5-1.4 5.1-2.7 7.6-3.9zM288 152c-30.9 0-56-25.1-56-56s25.1-56 56-56 56 25.1 56 56-25.1 56-56 56z" />
+                            </svg>
+                            3 130
+                        </div>
+                        <div class="user-info">
+                            <div class="user-name">Анастасия Иванова</div>
+                            <div class="user-details">UX/UI Дизайнер | ИИ Генерация Изображений</div>
+                        </div>
+                    </div>
+                    <div class="user-card">
+                        <img src="https://picsum.photos/300/300?2" alt="Михаил Петров">
+                        <div class="user-views">
+                            <svg class="user-views-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"
+                                width="12" height="12" fill="white">
+                                <path
+                                    d="M316.7 197.8C351.4 179.3 384 144.3 384 96C384 43 336 0 288 0S192 43 192 96c0 48.3 32.7 83.3 67.3 101.8-85.3 17.5-147.2 60.5-182.6 123.1C22 360.8 0 443.9 0 482.3C0 498.7 13.3 512 29.7 512H546.3c16.4 0 29.7-13.3 29.7-29.7 0-38.4-22-121.5-87.8-161.4-35.4-62.6-97.3-105.6-182.6-123.1zm-84.3 148.9c32.6-35.3 75.3-51.4 120.9-46.9 19.5 2 38.6 7.4 56.4 15.6 2.5 1.2 5.1 2.5 7.6 3.9 14 7.6 26.6 16.9 36.9 28.5 22.2 24.3 33 55.4 33 87.1v27.9c0 10.9-8.9 19.8-19.8 19.8H187.8c-10.9 0-19.8-8.9-19.8-19.8V416.7c0-31.7 10.8-62.8 33-87.1 10.3-11.6 22.9-20.9 36.9-28.5 2.5-1.4 5.1-2.7 7.6-3.9zM288 152c-30.9 0-56-25.1-56-56s25.1-56 56-56 56 25.1 56 56-25.1 56-56 56z" />
+                            </svg>
+                            2 408
+                        </div>
+                        <div class="user-info">
+                            <div class="user-name">Михаил Петров</div>
+                            <div class="user-details">Фронтенд разработчик | Создатель сайтов</div>
+                        </div>
+                    </div>
+                    <div class="user-card">
+                        <img src="https://picsum.photos/300/300?3" alt="Екатерина Смирнова">
+                        <div class="user-views">
+                            <svg class="user-views-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"
+                                width="12" height="12" fill="white">
+                                <path
+                                    d="M316.7 197.8C351.4 179.3 384 144.3 384 96C384 43 336 0 288 0S192 43 192 96c0 48.3 32.7 83.3 67.3 101.8-85.3 17.5-147.2 60.5-182.6 123.1C22 360.8 0 443.9 0 482.3C0 498.7 13.3 512 29.7 512H546.3c16.4 0 29.7-13.3 29.7-29.7 0-38.4-22-121.5-87.8-161.4-35.4-62.6-97.3-105.6-182.6-123.1zm-84.3 148.9c32.6-35.3 75.3-51.4 120.9-46.9 19.5 2 38.6 7.4 56.4 15.6 2.5 1.2 5.1 2.5 7.6 3.9 14 7.6 26.6 16.9 36.9 28.5 22.2 24.3 33 55.4 33 87.1v27.9c0 10.9-8.9 19.8-19.8 19.8H187.8c-10.9 0-19.8-8.9-19.8-19.8V416.7c0-31.7 10.8-62.8 33-87.1 10.3-11.6 22.9-20.9 36.9-28.5 2.5-1.4 5.1-2.7 7.6-3.9zM288 152c-30.9 0-56-25.1-56-56s25.1-56 56-56 56 25.1 56 56-25.1 56-56 56z" />
+                            </svg>
+                            21 384
+                        </div>
+                        <div class="user-info">
+                            <div class="user-name">Екатерина Смирнова</div>
+                            <div class="user-details">Директор по стратегическому маркетингу</div>
+                        </div>
+                    </div>
+                    <div class="user-card">
+                        <img src="https://picsum.photos/300/300?4" alt="Иван Козлов">
+                        <div class="user-views">
+                            <svg class="user-views-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"
+                                width="12" height="12" fill="white">
+                                <path
+                                    d="M316.7 197.8C351.4 179.3 384 144.3 384 96C384 43 336 0 288 0S192 43 192 96c0 48.3 32.7 83.3 67.3 101.8-85.3 17.5-147.2 60.5-182.6 123.1C22 360.8 0 443.9 0 482.3C0 498.7 13.3 512 29.7 512H546.3c16.4 0 29.7-13.3 29.7-29.7 0-38.4-22-121.5-87.8-161.4-35.4-62.6-97.3-105.6-182.6-123.1zm-84.3 148.9c32.6-35.3 75.3-51.4 120.9-46.9 19.5 2 38.6 7.4 56.4 15.6 2.5 1.2 5.1 2.5 7.6 3.9 14 7.6 26.6 16.9 36.9 28.5 22.2 24.3 33 55.4 33 87.1v27.9c0 10.9-8.9 19.8-19.8 19.8H187.8c-10.9 0-19.8-8.9-19.8-19.8V416.7c0-31.7 10.8-62.8 33-87.1 10.3-11.6 22.9-20.9 36.9-28.5 2.5-1.4 5.1-2.7 7.6-3.9zM288 152c-30.9 0-56-25.1-56-56s25.1-56 56-56 56 25.1 56 56-25.1 56-56 56z" />
+                            </svg>
+                            1 000
+                        </div>
+                        <div class="user-info">
+                            <div class="user-name">Иван Козлов</div>
+                            <div class="user-details">Контент-маркетолог | AI энтузиаст</div>
+                        </div>
+                    </div>
+                    <div class="user-card is-duplicate">
+                        <img src="https://picsum.photos/300/300?5" alt="Анастасия Иванова (Копия)">
+                        <div class="user-views">
+                            <svg class="user-views-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"
+                                width="12" height="12" fill="white">
+                                <path
+                                    d="M316.7 197.8C351.4 179.3 384 144.3 384 96C384 43 336 0 288 0S192 43 192 96c0 48.3 32.7 83.3 67.3 101.8-85.3 17.5-147.2 60.5-182.6 123.1C22 360.8 0 443.9 0 482.3C0 498.7 13.3 512 29.7 512H546.3c16.4 0 29.7-13.3 29.7-29.7 0-38.4-22-121.5-87.8-161.4-35.4-62.6-97.3-105.6-182.6-123.1zm-84.3 148.9c32.6-35.3 75.3-51.4 120.9-46.9 19.5 2 38.6 7.4 56.4 15.6 2.5 1.2 5.1 2.5 7.6 3.9 14 7.6 26.6 16.9 36.9 28.5 22.2 24.3 33 55.4 33 87.1v27.9c0 10.9-8.9 19.8-19.8 19.8H187.8c-10.9 0-19.8-8.9-19.8-19.8V416.7c0-31.7 10.8-62.8 33-87.1 10.3-11.6 22.9-20.9 36.9-28.5 2.5-1.4 5.1-2.7 7.6-3.9zM288 152c-30.9 0-56-25.1-56-56s25.1-56 56-56 56 25.1 56 56-25.1 56-56 56z" />
+                            </svg>
+                            3 130
+                        </div>
+                        <div class="user-info">
+                            <div class="user-name">Анастасия Иванова</div>
+                            <div class="user-details">UX/UI Дизайнер | ИИ Генерация Изображений</div>
+                        </div>
+                    </div>
+                    <div class="user-card is-duplicate">
+                        <img src="https://picsum.photos/300/300?6" alt="Михаил Петров (Копия)">
+                        <div class="user-views">
+                            <svg class="user-views-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"
+                                width="12" height="12" fill="white">
+                                <path
+                                    d="M316.7 197.8C351.4 179.3 384 144.3 384 96C384 43 336 0 288 0S192 43 192 96c0 48.3 32.7 83.3 67.3 101.8-85.3 17.5-147.2 60.5-182.6 123.1C22 360.8 0 443.9 0 482.3C0 498.7 13.3 512 29.7 512H546.3c16.4 0 29.7-13.3 29.7-29.7 0-38.4-22-121.5-87.8-161.4-35.4-62.6-97.3-105.6-182.6-123.1zm-84.3 148.9c32.6-35.3 75.3-51.4 120.9-46.9 19.5 2 38.6 7.4 56.4 15.6 2.5 1.2 5.1 2.5 7.6 3.9 14 7.6 26.6 16.9 36.9 28.5 22.2 24.3 33 55.4 33 87.1v27.9c0 10.9-8.9 19.8-19.8 19.8H187.8c-10.9 0-19.8-8.9-19.8-19.8V416.7c0-31.7 10.8-62.8 33-87.1 10.3-11.6 22.9-20.9 36.9-28.5 2.5-1.4 5.1-2.7 7.6-3.9zM288 152c-30.9 0-56-25.1-56-56s25.1-56 56-56 56 25.1 56 56-25.1 56-56 56z" />
+                            </svg>
+                            2 408
+                        </div>
+                        <div class="user-info">
+                            <div class="user-name">Михаил Петров</div>
+                            <div class="user-details">Фронтенд разработчик | Создатель сайтов</div>
+                        </div>
+                    </div>
+                    <div class="user-card is-duplicate">
+                        <img src="https://picsum.photos/300/300?7" alt="Екатерина Смирнова (Копия)">
+                        <div class="user-views">
+                            <svg class="user-views-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"
+                                width="12" height="12" fill="white">
+                                <path
+                                    d="M316.7 197.8C351.4 179.3 384 144.3 384 96C384 43 336 0 288 0S192 43 192 96c0 48.3 32.7 83.3 67.3 101.8-85.3 17.5-147.2 60.5-182.6 123.1C22 360.8 0 443.9 0 482.3C0 498.7 13.3 512 29.7 512H546.3c16.4 0 29.7-13.3 29.7-29.7 0-38.4-22-121.5-87.8-161.4-35.4-62.6-97.3-105.6-182.6-123.1zm-84.3 148.9c32.6-35.3 75.3-51.4 120.9-46.9 19.5 2 38.6 7.4 56.4 15.6 2.5 1.2 5.1 2.5 7.6 3.9 14 7.6 26.6 16.9 36.9 28.5 22.2 24.3 33 55.4 33 87.1v27.9c0 10.9-8.9 19.8-19.8 19.8H187.8c-10.9 0-19.8-8.9-19.8-19.8V416.7c0-31.7 10.8-62.8 33-87.1 10.3-11.6 22.9-20.9 36.9-28.5 2.5-1.4 5.1-2.7 7.6-3.9zM288 152c-30.9 0-56-25.1-56-56s25.1-56 56-56 56 25.1 56 56-25.1 56-56 56z" />
+                            </svg>
+                            21 384
+                        </div>
+                        <div class="user-info">
+                            <div class="user-name">Екатерина Смирнова</div>
+                            <div class="user-details">Директор по стратегическому маркетингу</div>
+                        </div>
+                    </div>
+                    <div class="user-card is-duplicate">
+                        <img src="https://picsum.photos/300/300?8" alt="Иван Козлов (Копия)">
+                        <div class="user-views">
+                            <svg class="user-views-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"
+                                width="12" height="12" fill="white">
+                                <path
+                                    d="M316.7 197.8C351.4 179.3 384 144.3 384 96C384 43 336 0 288 0S192 43 192 96c0 48.3 32.7 83.3 67.3 101.8-85.3 17.5-147.2 60.5-182.6 123.1C22 360.8 0 443.9 0 482.3C0 498.7 13.3 512 29.7 512H546.3c16.4 0 29.7-13.3 29.7-29.7 0-38.4-22-121.5-87.8-161.4-35.4-62.6-97.3-105.6-182.6-123.1zm-84.3 148.9c32.6-35.3 75.3-51.4 120.9-46.9 19.5 2 38.6 7.4 56.4 15.6 2.5 1.2 5.1 2.5 7.6 3.9 14 7.6 26.6 16.9 36.9 28.5 22.2 24.3 33 55.4 33 87.1v27.9c0 10.9-8.9 19.8-19.8 19.8H187.8c-10.9 0-19.8-8.9-19.8-19.8V416.7c0-31.7 10.8-62.8 33-87.1 10.3-11.6 22.9-20.9 36.9-28.5 2.5-1.4 5.1-2.7 7.6-3.9zM288 152c-30.9 0-56-25.1-56-56s25.1-56 56-56 56 25.1 56 56-25.1 56-56 56z" />
+                            </svg>
+                            1 000
+                        </div>
+                        <div class="user-info">
+                            <div class="user-name">Иван Козлов</div>
+                            <div class="user-details">Контент-маркетолог | AI энтузиаст</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="features" id="features">
+            <div class="container">
+                <h2 class="section-title">
+                    Ключевые возможности
+                </h2>
+            </div>
+            <div class="feature-slider-wrapper">
+                <div class="features-grid" id="featuresGrid">
+                    <div class="feature-card" data-index="0">
+                        <div>
+                            <span class="feature-badge">Профессиональное</span>
+                            <h3 class="feature-title">Расширьте сеть профессиональных контактов</h3>
+                        </div>
+                        <a href="#" class="feature-link">Подробнее
+                            <svg viewBox="0 0 24 24" width="20" height="20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9 5L15 12L9 19" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </a>
+                    </div>
+
+                    <div class="feature-card" data-index="1">
+                        <div>
+                            <span class="feature-badge">Инновации</span>
+                            <h3 class="feature-title">Генерируйте контент с помощью ИИ</h3>
+                        </div>
+                        <a href="#" class="feature-link">Подробнее
+                            <svg viewBox="0 0 24 24" width="20" height="20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9 5L15 12L9 19" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </a>
+                    </div>
+
+                    <div class="feature-card" data-index="2">
+                        <div>
+                            <span class="feature-badge">Безопасность</span>
+                            <h3 class="feature-title">Управляйте своей приватностью</h3>
+                        </div>
+                        <a href="#" class="feature-link">Подробнее
+                            <svg viewBox="0 0 24 24" width="20" height="20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9 5L15 12L9 19" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </a>
+                    </div>
+
+                    <div class="feature-card" data-index="3">
+                        <div>
+                            <span class="feature-badge">Карьера</span>
+                            <h3 class="feature-title">Найдите работу мечты или идеального сотрудника</h3>
+                        </div>
+                        <a href="#" class="feature-link">Подробнее
+                            <svg viewBox="0 0 24 24" width="20" height="20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9 5L15 12L9 19" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <section class="stats" id="stats">
+            <div class="container">
+                <div class="stats-grid">
+                    <div class="stat-item is-visible">
+                        <div class="stat-value">
+                            <font dir="auto" style="vertical-align: inherit;">
+                                <font dir="auto" style="vertical-align: inherit;">5М+</font>
+                            </font>
+                        </div>
+                        <div class="stat-label">
+                            <font dir="auto" style="vertical-align: inherit;">
+                                <font dir="auto" style="vertical-align: inherit;">Активные пользователи</font>
+                            </font>
+                        </div>
+                    </div>
+                    <div class="stat-item is-visible">
+                        <div class="stat-value">
+                            <font dir="auto" style="vertical-align: inherit;">
+                                <font dir="auto" style="vertical-align: inherit;">100К</font>
+                            </font>
+                        </div>
+                        <div class="stat-label">
+                            <font dir="auto" style="vertical-align: inherit;">
+                                <font dir="auto" style="vertical-align: inherit;">Ежедневные связи</font>
+                            </font>
+                        </div>
+                    </div>
+                    <div class="stat-item is-visible">
+                        <div class="stat-value">
+                            <font dir="auto" style="vertical-align: inherit;">
+                                <font dir="auto" style="vertical-align: inherit;">99,9%</font>
+                            </font>
+                        </div>
+                        <div class="stat-label">
+                            <font dir="auto" style="vertical-align: inherit;">
+                                <font dir="auto" style="vertical-align: inherit;">Надежность безотказной работы</font>
+                            </font>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="download" id="download">
+            <div class="container">
+                <h2 class="download-title">
+                    <font dir="auto" style="vertical-align: inherit;">
+                        <font dir="auto" style="vertical-align: inherit;">Готовы присоединиться к сети?</font>
+                    </font>
+                </h2>
+                <p class="download-description">
+                    <font dir="auto" style="vertical-align: inherit;">
+                        <font dir="auto" style="vertical-align: inherit;">Загрузите приложение сегодня и начните
+                            исследовать мир связей и творчества.</font>
+                    </font>
+                </p>
+
+                <div class="download-buttons">
+                    <a href="#" class="download-btn">
+                        <div class="download-btn-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path
+                                    d="M12 20.94l-.79-.89a8 8 0 0 1-1.39-4.88c-.01-1.6.5-3.14 1.34-4.48 0 0 .5-1.2.98-2.3 0 0 1.2.6 1.8.84-.2.4-.4.8-.6 1.2-.4.7-1.1 1.6-1.1 2.9 0 1.6.8 3.2 2.2 4.1.8.5 1.7.8 2.6.8 1.4 0 2.6-.6 3.4-1.6 1.1-1.4 1.1-3.3 0-4.7s-2.8-2.3-4.5-2.3c-1.3 0-2.3.4-3.1 1.2.6-.4 1.3-.6 2-.6 1.6 0 3 .8 4 2.1.8 1.1.8 2.5 0 3.6s-1.8 2.1-3.2 2.1c-.8 0-1.6-.2-2.3-.6-.9-.5-1.5-1.3-1.8-2.2-.6-1.9 0-4.2 1.3-5.8 1.6-1.8 4.2-2.4 6.3-1.6 2.2.8 3.5 3.2 3.5 5.7.1 2.9-1.3 5.5-3.6 7.2-.6.4-1.3.7-2 .8-.1.9-.3 1.8-.7 2.6-.8 1.6-2.5 2.6-4.3 2.6-1.8 0-3.5-1-4.3-2.6-.4-.8-.6-1.7-.7-2.6 0-.3.2-.6.5-.7.4-.1.7.1.8.5.1.3.2.6.4.9.4.6 1 1.2 1.8 1.6 1.3.6 2.8.6 4.1 0 .8-.4 1.4-1.1 1.8-1.9.3-.6.5-1.3.5-2 0-.2-.1-.4-.2-.5">
+                                </path>
+                            </svg>
+                        </div>
+                        <div class="download-btn-text">
+                            <div class="download-btn-label">
+                                <font dir="auto" style="vertical-align: inherit;">
+                                    <font dir="auto" style="vertical-align: inherit;">Получите это</font>
+                                </font>
+                            </div>
+                            <div class="download-btn-platform">
+                                <font dir="auto" style="vertical-align: inherit;">
+                                    <font dir="auto" style="vertical-align: inherit;">Магазин приложений</font>
+                                </font>
+                            </div>
+                        </div>
+                        <span class="coming-soon">
+                            <font dir="auto" style="vertical-align: inherit;">
+                                <font dir="auto" style="vertical-align: inherit;">Скоро</font>
+                            </font>
+                        </span>
+                    </a>
+                    <a href="#" class="download-btn">
+                        <div class="download-btn-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path
+                                    d="M17 19h-10c-1.1 0-2-.9-2-2v-11c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2v11c0 1.1-.9 2-2 2z">
+                                </path>
+                                <path d="M9.5 1h5"></path>
+                                <path d="M12 19v3"></path>
+                                <path d="M8 22h8"></path>
+                            </svg>
+                        </div>
+                        <div class="download-btn-text">
+                            <div class="download-btn-label">
+                                <font dir="auto" style="vertical-align: inherit;">
+                                    <font dir="auto" style="vertical-align: inherit;">Получите это</font>
+                                </font>
+                            </div>
+                            <div class="download-btn-platform">
+                                <font dir="auto" style="vertical-align: inherit;">
+                                    <font dir="auto" style="vertical-align: inherit;">Google Play</font>
+                                </font>
+                            </div>
+                        </div>
+                        <span class="coming-soon">
+                            <font dir="auto" style="vertical-align: inherit;">
+                                <font dir="auto" style="vertical-align: inherit;">Скоро</font>
+                            </font>
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="red-block-logo">
+                        <span class="logo-int-block">
+                            <font dir="auto" style="vertical-align: inherit;">
+                                <font dir="auto" style="vertical-align: inherit;">Инт</font>
+                            </font>
+                        </span>
+                        <span class="logo-network-text">
+                            <font dir="auto" style="vertical-align: inherit;">
+                                <font dir="auto" style="vertical-align: inherit;">Потрясающая сеть</font>
+                            </font>
+                        </span>
+                    </div>
+                    <div class="footer-links-group">
+                        <div class="footer-column">
+                            <h4 class="footer-heading">
+                                <font dir="auto" style="vertical-align: inherit;">
+                                    <font dir="auto" style="vertical-align: inherit;">Продукт</font>
+                                </font>
+                            </h4>
+                            <a href="#" class="footer-link">
+                                <font dir="auto" style="vertical-align: inherit;">
+                                    <font dir="auto" style="vertical-align: inherit;">Функции</font>
+                                </font>
+                            </a>
+                            <a href="#" class="footer-link">
+                                <font dir="auto" style="vertical-align: inherit;">
+                                    <font dir="auto" style="vertical-align: inherit;">Цены</font>
+                                </font>
+                            </a>
+                            <a href="#" class="footer-link">
+                                <font dir="auto" style="vertical-align: inherit;">
+                                    <font dir="auto" style="vertical-align: inherit;">Скачать</font>
+                                </font>
+                            </a>
+                            <a href="#" class="footer-link">
+                                <font dir="auto" style="vertical-align: inherit;">
+                                    <font dir="auto" style="vertical-align: inherit;">API</font>
+                                </font>
+                            </a>
+                        </div>
+                        <div class="footer-column">
+                            <h4 class="footer-heading">
+                                <font dir="auto" style="vertical-align: inherit;">
+                                    <font dir="auto" style="vertical-align: inherit;">Компания</font>
+                                </font>
+                            </h4>
+                            <a href="#" class="footer-link">
+                                <font dir="auto" style="vertical-align: inherit;">
+                                    <font dir="auto" style="vertical-align: inherit;">О нас</font>
+                                </font>
+                            </a>
+                            <a href="#" class="footer-link">
+                                <font dir="auto" style="vertical-align: inherit;">
+                                    <font dir="auto" style="vertical-align: inherit;">Карьера</font>
+                                </font>
+                            </a>
+                            <a href="#" class="footer-link">
+                                <font dir="auto" style="vertical-align: inherit;">
+                                    <font dir="auto" style="vertical-align: inherit;">Блог</font>
+                                </font>
+                            </a>
+                            <a href="#" class="footer-link">
+                                <font dir="auto" style="vertical-align: inherit;">
+                                    <font dir="auto" style="vertical-align: inherit;">Контакт</font>
+                                </font>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-logo">© 2025 Потрясающая сеть Inc. All rights reserved.</div>
+                <div class="footer-legal">
+                    <a href="#" class="footer-legal-link">
+                        <font dir="auto" style="vertical-align: inherit;">
+                            <font dir="auto" style="vertical-align: inherit;">политика конфиденциальности</font>
+                        </font>
+                    </a>
+                    <a href="#" class="footer-legal-link">
+                        <font dir="auto" style="vertical-align: inherit;">
+                            <font dir="auto" style="vertical-align: inherit;">Условия обслуживания</font>
+                        </font>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
